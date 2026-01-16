@@ -40,7 +40,7 @@ func (p *CustomAzureProvider) Schema(
 			"client_id": schema.StringAttribute{
 				Required: true,
 			},
-			"***REMOVED***": schema.StringAttribute{
+			"client_secret": schema.StringAttribute{
 				Required:  true,
 				Sensitive: true,
 			},
@@ -56,7 +56,7 @@ func (p *CustomAzureProvider) Configure(
 	var config struct {
 		TenantID     string `tfsdk:"tenant_id"`
 		ClientID     string `tfsdk:"client_id"`
-		ClientSecret string `tfsdk:"***REMOVED***"`
+		ClientSecret string `tfsdk:"client_secret"`
 	}
 
 	diags := req.Config.Get(ctx, &config)

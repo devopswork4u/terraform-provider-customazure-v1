@@ -16,5 +16,5 @@ terraform {
 provider "tfprovider" {
   tenant_id     = var.tenant_id
   client_id     = var.client_id
-  ***REMOVED*** = var.***REMOVED***
+  client_secret = var.client_secret
 }
