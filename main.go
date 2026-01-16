@@ -9,6 +9,6 @@ import (
 
 func main() {
 	providerserver.Serve(context.Background(), provider.New, providerserver.ServeOpts{
-		Address: "registry.terraform.io/example/customazure",
+		Address: "registry.terraform.io/devopswork4u/terraform-provider-customazure-v1",
 	})
 }
